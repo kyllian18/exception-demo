@@ -79,7 +79,8 @@ namespace exceptiondemo
         private static void Show(string fname, int age)
         {
             if (fname == null)
-                throw new ArgumentException("Parameter cannot be null", nameof(fname);
+                throw new ArgumentException("Parameter cannot be null", nameof(fname));
+
             Console.WriteLine($"{fname} is {age} years old");
         }
     }
